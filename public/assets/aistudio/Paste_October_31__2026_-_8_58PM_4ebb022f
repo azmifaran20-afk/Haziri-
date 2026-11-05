@@ -1,0 +1,1464 @@
+WORKLEDGER PRO
+
+Professional Attendance, Payroll, Overtime, Expenses & Workforce Management System
+
+1. PROJECT OBJECTIVE
+
+Act as a senior full-stack software developer, UI/UX designer, database architect, payroll specialist and software testing engineer.
+
+Build a complete, professional, production-ready application called "WorkLedger Pro".
+
+The application must manage worker attendance, working hours, overtime, salary, expenses, deductions, advances, payments, projects and payroll reports.
+
+The application must support:
+
+- Individual Mode
+- Company Mode
+- Mobile, tablet and desktop interfaces
+- Automatic calculations
+- Calendar-based attendance
+- Individual and company-wide reporting
+- PDF, Excel and CSV exports
+- Secure data storage
+- Reliable salary and expense tracking
+
+IMPORTANT: Build a fully functional application, not just a UI mockup or static dashboard.
+
+All buttons, forms, calculations, database operations, filters, reports and settings must work.
+
+Do not use hardcoded dashboard figures as actual data. Any demo data must be clearly identified as demo data.
+
+---
+
+2. APPLICATION MODES
+
+When the application opens, display two large, professional selection cards:
+
+1. INDIVIDUAL MODE
+2. COMPANY MODE
+
+Remember the user's last selected mode and allow switching between modes.
+
+Keep individual and company data logically separated.
+
+A. INDIVIDUAL MODE
+
+Designed for a self-employed worker, individual contractor or person maintaining a personal work and earnings register.
+
+Requirements:
+
+- No profession category menu.
+- No company employee category system.
+- Simple dashboard.
+- Personal attendance records.
+- Daily working hours.
+- Basic salary or wage settings.
+- Overtime calculations.
+- Expense entry.
+- Expense deduction settings.
+- Advances and payment tracking.
+- Final salary calculations.
+- Calendar interface.
+- Daily, weekly and monthly reports.
+- PDF, Excel and CSV exports.
+
+Allow users to maintain personal work records without creating a company or selecting a profession.
+
+B. COMPANY MODE
+
+Designed for companies, construction contractors and workforce managers.
+
+Requirements:
+
+- Multiple workers.
+- Profession-wise categories.
+- Worker profiles.
+- Multiple projects.
+- Attendance management for all workers.
+- Individual salary settings.
+- Overtime settings.
+- Expense management.
+- Salary deductions.
+- Advance management.
+- Salary payments.
+- Payroll processing.
+- Worker-wise reports.
+- All-worker consolidated reports.
+- Project-wise labor cost reports.
+- Company dashboard.
+- User roles and permissions.
+
+The profession category menu must appear only in Company Mode.
+
+---
+
+3. PROFESSIONAL UI/UX DESIGN
+
+Create a modern, premium business application with a clean, organized interface.
+
+Design requirements:
+
+- Responsive layout for Android, iPhone, tablet and desktop.
+- Mobile-first design.
+- Professional typography.
+- Consistent spacing.
+- Clear icons.
+- Readable tables.
+- Searchable dropdowns.
+- Professional charts.
+- Accessible color contrast.
+- Light and dark modes.
+- Smooth but minimal animations.
+- English as the default language.
+- Architecture ready for Hindi, Urdu and Arabic.
+- Right-to-left layout support for Arabic and Urdu.
+
+Color system
+
+Use:
+
+- Green: Present attendance, successful payments and positive earnings.
+- Red: Absent attendance, deductions and overdue warnings.
+- Orange: Overtime, pending approvals and alerts.
+- Blue: General information and selected dates.
+- Purple: Reports and analytics.
+- Grey: Weekly off, inactive items and neutral states.
+- Teal: Holidays and special statuses.
+
+Desktop navigation
+
+Create a left sidebar.
+
+Mobile navigation
+
+Create a bottom navigation bar with additional items inside a More menu.
+
+Main navigation:
+
+1. Dashboard
+2. Attendance
+3. Calendar
+4. Workers
+5. Salary & Payroll
+6. Overtime
+7. Expenses
+8. Advances & Payments
+9. Reports
+10. Projects
+11. Settings
+
+Hide company-specific features in Individual Mode where they are not applicable.
+
+---
+
+4. DASHBOARD
+
+Create a dynamic dashboard that displays real information from the database.
+
+Individual Dashboard
+
+Display:
+
+- Today's attendance.
+- Today's working hours.
+- Today's overtime.
+- Today's earnings.
+- Current month's basic salary or wages.
+- Current month's overtime earnings.
+- Total gross earnings.
+- Total expenses.
+- Total approved deductions.
+- Advances received.
+- Salary already received.
+- Final payable salary.
+- Remaining salary balance.
+- Monthly attendance summary.
+- Recent work records.
+- Recent expenses.
+- Recent payments.
+
+Add charts for:
+
+- Daily earnings.
+- Monthly earnings.
+- Overtime trends.
+- Expenses versus earnings.
+
+Company Dashboard
+
+Display:
+
+- Total active workers.
+- Present workers today.
+- Absent workers today.
+- Workers on leave.
+- Workers whose attendance is not marked.
+- Total regular working hours.
+- Total overtime hours.
+- Total basic wages.
+- Total overtime wages.
+- Total gross payroll.
+- Total approved deductions.
+- Total expenses.
+- Total advances issued.
+- Total salary paid.
+- Total remaining salary liability.
+
+Include:
+
+- Profession-wise workforce chart.
+- Project-wise labor cost chart.
+- Monthly payroll chart.
+- Daily attendance chart.
+- Recent salary payments.
+- Recent expenses.
+- Pending approvals.
+- Missing attendance alerts.
+
+Provide date, project and profession filters.
+
+Dashboard totals must match the underlying reports.
+
+---
+
+5. COMPANY WORKER MANAGEMENT
+
+Create a complete worker management module.
+
+Worker profile
+
+Fields:
+
+- Unique Worker ID.
+- Full Name.
+- Profile Photo, optional.
+- Phone Number, optional.
+- Address, optional.
+- Emergency Contact, optional.
+- Joining Date.
+- Employment Status.
+- Profession.
+- Assigned Project.
+- Supervisor.
+- Work Location.
+- Shift Schedule.
+- Default Break Duration.
+- Weekly Off Days.
+- Employment Type.
+- Salary Settings.
+- Overtime Settings.
+- Notes.
+
+Employment status:
+
+- Active
+- Inactive
+- Archived
+
+Employment type:
+
+- Hourly Wage
+- Daily Wage
+- Monthly Salary
+
+Allow workers to be searched and filtered by:
+
+- Name
+- Worker ID
+- Profession
+- Project
+- Employment Status
+
+Support profile editing, archival and salary history.
+
+Changing a worker's salary rate must not silently alter finalized historical payroll.
+
+---
+
+6. PROFESSION-WISE CATEGORIES
+
+Create the following default categories in Company Mode:
+
+1. Electrician
+2. Plumber
+3. Mason
+4. Data Technician
+5. Helper
+6. Firefighting Technician
+7. HVAC Technician
+8. Carpenter
+9. Painter
+10. Welder
+11. General Technician
+12. Other
+
+Allow administrators to:
+
+- Add categories.
+- Rename categories.
+- Edit categories.
+- Deactivate categories.
+- Reorder categories.
+
+Workers must be assignable to projects and professions.
+
+Individual Mode must not display profession categories.
+
+---
+
+7. ATTENDANCE MANAGEMENT
+
+Create a complete attendance system with individual and bulk entry.
+
+Attendance statuses
+
+- Present
+- Absent
+- Half Day
+- Paid Leave
+- Unpaid Leave
+- Weekly Off
+- Holiday
+- Not Marked
+
+Mandatory attendance colors
+
+- Present: Green.
+- Absent: Red.
+- Half Day: Orange.
+- Paid Leave: Blue.
+- Unpaid Leave: Purple.
+- Weekly Off: Grey.
+- Holiday: Teal.
+- Not Marked: Neutral Grey.
+
+Not Marked must never be automatically treated as Absent unless an explicitly configured policy requires it.
+
+Attendance entry fields
+
+- Worker.
+- Date.
+- Attendance Status.
+- Check-in Time.
+- Check-out Time.
+- Break Duration.
+- Total Working Hours.
+- Regular Working Hours.
+- Overtime Hours.
+- Project.
+- Notes.
+
+Automatic working-hour calculation
+
+Net Working Hours = Total Elapsed Working Time − Unpaid Break Duration.
+
+Regular Hours = Approved Hours Within the Configured Regular Schedule, Subject to the Selected Overtime Policy.
+
+Overtime Hours = Approved Overtime Hours According to the Selected Overtime Policy.
+
+Support overnight shifts.
+
+Validate invalid time entries and negative durations.
+
+Allow manual working-hour entry when authorized.
+
+When a worker is marked Absent, regular payable hours must normally be zero. Paid leave and other exceptions must follow the configured payroll policy.
+
+Bulk attendance
+
+In Company Mode:
+
+- Select a date.
+- Display all active workers.
+- Mark attendance for multiple workers.
+- Apply the same status to selected workers.
+- Enter working hours.
+- Save all records together.
+- Edit previously saved attendance.
+- Show confirmation before bulk changes.
+- Record changes in an audit log.
+
+Prevent duplicate attendance records for the same worker and work date.
+
+---
+
+8. CALENDAR INTERFACE
+
+Create a professional calendar module.
+
+Views:
+
+- Monthly Calendar
+- Weekly Calendar
+- Daily View
+- Agenda View
+
+Calendar features
+
+Every date must show the appropriate attendance status.
+
+Selecting a date must open a detail panel showing:
+
+- Attendance status.
+- Working hours.
+- Regular hours.
+- Overtime hours.
+- Salary calculation.
+- Expenses.
+- Notes.
+
+Individual Mode
+
+Show personal attendance and earnings for the selected date.
+
+Company Mode
+
+Show:
+
+- Total workers.
+- Present workers.
+- Absent workers.
+- Workers on leave.
+- Not-marked workers.
+- Attendance by profession.
+- Attendance by project.
+
+Allow attendance to be marked directly from the calendar.
+
+Support month navigation, date filters, worker filters, profession filters and project filters.
+
+Display a clear color legend.
+
+Use consistent local dates and avoid timezone-related date errors.
+
+---
+
+9. SALARY SETTINGS
+
+Create a dedicated salary settings module.
+
+Every worker must have independently configurable salary settings.
+
+Support three calculation methods:
+
+1. Hourly Wage
+2. Daily Wage
+3. Monthly Salary
+
+Allow administrators to configure:
+
+- Basic hourly rate.
+- Daily wage.
+- Monthly basic salary.
+- Standard daily working hours.
+- Scheduled monthly working hours.
+- Salary period.
+- Half-day rules.
+- Paid leave rules.
+- Unpaid absence rules.
+- Optional allowances.
+- Applicable deductions.
+- Effective date of salary rates.
+
+Allow authorized users to change settings at any time.
+
+Maintain a salary rate history.
+
+Historical finalized payroll must remain unchanged when future salary settings are updated.
+
+Hourly salary example
+
+Hourly rate = 10 SAR.
+
+Regular working hours = 8.
+
+Regular wages = 8 × 10 = 80 SAR.
+
+Daily salary example
+
+Daily rate = 150 SAR.
+
+Full day = 150 SAR.
+
+Half day = 75 SAR when the configured half-day fraction is 0.5.
+
+Monthly salary
+
+Support fixed monthly salary.
+
+Allow configurable policies for:
+
+- Unpaid absences.
+- Joining or leaving during a payroll period.
+- Scheduled hours.
+- Leave treatment.
+- Overtime eligibility.
+
+Do not apply the hourly-wage formula to every monthly-paid worker automatically.
+
+---
+
+10. OVERTIME MANAGEMENT
+
+Create a dedicated overtime settings panel.
+
+Allow these default multipliers:
+
+- 1.0×
+- 1.5×
+- 2.0×
+
+Also allow custom multipliers, including:
+
+- 1.25×
+- 1.75×
+- Other administrator-defined values.
+
+Allow different rules for:
+
+- Regular overtime.
+- Weekly rest days.
+- Holidays.
+- Night shifts.
+
+These rules must be configurable for each worker or according to an assigned policy.
+
+Overtime formula
+
+Overtime Pay = Approved Overtime Hours × Configured Overtime Base Rate × Applicable Multiplier.
+
+Example
+
+Base hourly rate = 10 SAR.
+
+Regular hours = 8.
+
+Overtime hours = 3.
+
+Multiplier = 1.5×.
+
+Regular wages = 8 × 10 = 80 SAR.
+
+Overtime wages = 3 × 10 × 1.5 = 45 SAR.
+
+Gross daily wages = 80 + 45 = 125 SAR.
+
+If the multiplier changes to 2×:
+
+Overtime wages = 3 × 10 × 2 = 60 SAR.
+
+Gross daily wages = 80 + 60 = 140 SAR.
+
+Overtime controls
+
+Support:
+
+- Automatic overtime calculation.
+- Manual overtime entry.
+- Overtime approval.
+- Custom daily thresholds.
+- Weekly overtime thresholds.
+- Configurable rounding rules.
+- Minimum overtime increments.
+- Individual worker overtime rates.
+
+Do not silently overwrite manually approved overtime when attendance times change.
+
+Keep a record of the calculation method used.
+
+---
+
+11. AUTOMATIC SALARY CALCULATION ENGINE
+
+Build a centralized and tested payroll calculation engine.
+
+Hourly wage calculation
+
+Regular Pay = Approved Regular Hours × Base Hourly Rate.
+
+Overtime Pay = Approved Overtime Hours × Configured Overtime Base Rate × Applicable Multiplier.
+
+Gross Salary = Regular Pay + Overtime Pay + Applicable Allowances.
+
+Daily wage calculation
+
+Basic Daily Pay = Configured Daily Rate × Applicable Attendance Fraction.
+
+Overtime Pay = Approved Overtime Hours × Configured Overtime Base Rate × Applicable Multiplier.
+
+Gross Salary = Basic Daily Pay + Overtime Pay + Applicable Allowances.
+
+Monthly salary calculation
+
+Calculate monthly basic salary according to the configured monthly payroll policy.
+
+Add eligible overtime, allowances and other applicable earnings.
+
+Apply only authorized deductions.
+
+Automatic recalculation
+
+When relevant attendance, overtime, salary rates or approved expense records change:
+
+- Recalculate draft payroll.
+- Update dashboard totals.
+- Update worker salary statements.
+- Update applicable reports.
+
+Do not silently modify finalized payroll.
+
+Use accurate decimal arithmetic and consistent rounding.
+
+Display the complete calculation breakdown.
+
+---
+
+12. EXPENSE MANAGEMENT
+
+Create a dedicated expense module.
+
+Expense categories:
+
+- Food
+- Transport
+- Accommodation
+- Tools and Equipment
+- Materials
+- Fuel
+- Medical
+- Communication
+- Project Expenses
+- Other
+
+Allow custom categories.
+
+Expense entry form
+
+Fields:
+
+- Expense ID.
+- Expense Date.
+- Worker Name, optional.
+- Expense Category.
+- Description.
+- Amount.
+- Currency.
+- Paid By.
+- Project, optional.
+- Payment Method.
+- Receipt Attachment.
+- Deduct From Salary: Yes or No.
+- Approval Status.
+- Payroll Period.
+- Notes.
+
+Expense classification
+
+Classify expenses as:
+
+1. Company Operating Expense.
+2. Project Expense.
+3. Worker-Related Expense.
+4. Reimbursable Expense.
+5. Salary-Deductible Expense.
+
+Company operating expenses must never be automatically deducted from worker salaries.
+
+Only explicitly designated and authorized salary deductions may affect payroll.
+
+Expense reports
+
+Support:
+
+- Daily expenses.
+- Monthly expenses.
+- Worker-wise expenses.
+- Project-wise expenses.
+- Category-wise expenses.
+- Approved and pending expenses.
+- Salary-deductible expenses.
+
+Prevent duplicate deductions.
+
+Maintain expense history and approval records.
+
+---
+
+13. MOST IMPORTANT FEATURE: EXPENSE MINUS KARKE FINAL SALARY
+
+Implement a fully functional automatic salary deduction system.
+
+Whenever an authorized expense is entered and approved for salary deduction, the payroll calculation must update automatically if the payroll is still in draft.
+
+Salary statement fields
+
+Display:
+
+- Basic Salary
+- Overtime Salary
+- Allowances
+- Other Earnings
+- Gross Salary
+- Food Expense Deduction
+- Transport Expense Deduction
+- Accommodation Deduction
+- Other Approved Expense Deductions
+- Other Authorized Deductions
+- Advance Recovery
+- Total Deductions
+- Final Payable Salary
+- Salary Already Paid
+- Remaining Salary Balance
+
+Formula 1: Gross Salary
+
+Gross Salary = Basic Salary + Overtime Salary + Allowances + Other Eligible Earnings.
+
+Formula 2: Total Deductions
+
+Total Deductions = Approved Salary-Deductible Expenses + Other Authorized Deductions + Advance Recovery.
+
+Formula 3: Final Payable Salary
+
+Final Payable Salary = Gross Salary − Total Deductions.
+
+Formula 4: Remaining Salary Balance
+
+Remaining Salary Balance = Final Payable Salary − Payments Allocated to That Payroll.
+
+Use these formulas consistently across dashboards, worker statements, payroll reports and exports.
+
+Example calculation
+
+Worker: Electrician.
+
+Basic Salary = 2,400 SAR.
+
+Overtime Salary = 450 SAR.
+
+Allowances = 100 SAR.
+
+Gross Salary:
+
+2,400 + 450 + 100 = 2,950 SAR.
+
+Expenses and deductions:
+
+- Food = 150 SAR.
+- Transport = 100 SAR.
+- Other approved expense = 50 SAR.
+- Advance recovery = 200 SAR.
+
+Total Deductions:
+
+150 + 100 + 50 + 200 = 500 SAR.
+
+Final Payable Salary:
+
+2,950 − 500 = 2,450 SAR.
+
+If the worker has already received 500 SAR allocated to this payroll:
+
+Remaining Salary Balance:
+
+2,450 − 500 = 1,950 SAR.
+
+Display all amounts clearly.
+
+Mandatory controls
+
+- Expenses must not be deducted automatically unless marked for salary deduction and approved.
+- Company operating expenses must not be deducted from workers' salaries.
+- An expense must not be deducted twice.
+- An advance must not be recovered twice.
+- A salary payment must not be counted twice.
+- Final Payable Salary and Remaining Salary Balance must remain separate.
+- Negative balances must be clearly identified.
+- If deductions exceed earnings, flag the case for review and follow the configured payroll policy.
+- Finalized payroll must be locked against unauthorized modifications.
+- Authorized reopening must be recorded in the audit log.
+
+Ensure all deductions follow applicable company policy and legal requirements.
+
+---
+
+14. ADVANCE AND SALARY PAYMENT MANAGEMENT
+
+Create an Advances & Payments module.
+
+Worker advance
+
+Fields:
+
+- Worker.
+- Date.
+- Amount.
+- Currency.
+- Payment Method.
+- Reference Number.
+- Reason.
+- Notes.
+- Recorded By.
+
+Salary payment
+
+Fields:
+
+- Worker.
+- Payment Date.
+- Payroll Period.
+- Amount Paid.
+- Payment Method.
+- Reference Number.
+- Notes.
+
+Support:
+
+- Partial payments.
+- Multiple payments.
+- Advance balances.
+- Advance recovery schedules.
+- Payment history.
+- Payment allocation to payroll.
+
+Keep advances separate from ordinary salary payments.
+
+Only subtract an advance from salary when it is classified as recoverable and an authorized recovery is recorded.
+
+Worker ledger
+
+Show:
+
+- Total Gross Earnings.
+- Total Deductions.
+- Final Payable Salary.
+- Advances Issued.
+- Advances Recovered.
+- Outstanding Advance Balance.
+- Salary Payments.
+- Remaining Salary Balance.
+
+Use transaction records and payment allocations to prevent double counting.
+
+---
+
+15. INDIVIDUAL WORKER REPORT
+
+Create a detailed report for any selected worker.
+
+Filters:
+
+- Date Range.
+- Month.
+- Year.
+- Attendance Status.
+- Project.
+- Profession in Company Mode.
+
+Show:
+
+- Worker Name.
+- Worker ID.
+- Date.
+- Day of the Week.
+- Attendance Status.
+- Check-in.
+- Check-out.
+- Break Duration.
+- Working Hours.
+- Regular Hours.
+- Overtime Hours.
+- Hourly or Daily Rate.
+- Overtime Multiplier.
+- Basic Wages.
+- Overtime Wages.
+- Allowances.
+- Gross Salary.
+- Expense Details.
+- Salary-Deductible Expenses.
+- Other Deductions.
+- Advance Recovery.
+- Total Deductions.
+- Final Payable Salary.
+- Salary Paid.
+- Remaining Salary Balance.
+
+Include:
+
+- Daily rows.
+- Weekly summaries.
+- Monthly totals.
+- Complete expense breakdown.
+- Payment history.
+- Attendance summary.
+
+Clicking a date should open the corresponding record.
+
+---
+
+16. ALL-WORKER CONSOLIDATED REPORT
+
+Create a consolidated report for all workers in Company Mode.
+
+Display one row per worker.
+
+Columns:
+
+- Worker ID.
+- Worker Name.
+- Profession.
+- Project.
+- Present Days.
+- Absent Days.
+- Half Days.
+- Paid Leave Days.
+- Unpaid Leave Days.
+- Regular Hours.
+- Overtime Hours.
+- Basic Wages.
+- Overtime Wages.
+- Allowances.
+- Gross Salary.
+- Deductible Expenses.
+- Other Deductions.
+- Advance Recovery.
+- Total Deductions.
+- Final Payable Salary.
+- Salary Paid.
+- Remaining Salary Balance.
+
+Include a company-wide totals row.
+
+Provide:
+
+- Daily consolidated report.
+- Weekly consolidated report.
+- Monthly consolidated report.
+- Custom date range report.
+
+Allow filtering and sorting by worker, profession, project, hours, salary and balance.
+
+Avoid duplicated totals when joining attendance, expense, payment and advance records.
+
+---
+
+17. REPORTS CENTER
+
+Create a professional Reports Center with the following reports:
+
+Attendance Reports
+
+- Daily attendance register.
+- Monthly attendance register.
+- Worker-wise attendance.
+- Profession-wise attendance.
+- Project-wise attendance.
+- Missing attendance report.
+
+Salary Reports
+
+- Daily earnings.
+- Weekly salary.
+- Monthly payroll.
+- Individual salary statements.
+- All-worker payroll.
+- Salary deductions.
+- Remaining salary balances.
+
+Expense Reports
+
+- Daily expenses.
+- Monthly expenses.
+- Worker expenses.
+- Project expenses.
+- Category-wise expenses.
+- Salary-deductible expenses.
+
+Financial Reports
+
+- Total gross payroll.
+- Total overtime cost.
+- Total expenses.
+- Total deductions.
+- Total advances issued.
+- Total advance recovery.
+- Total salary paid.
+- Outstanding salary liability.
+
+All reports must be calculated from actual database records.
+
+---
+
+18. PDF, EXCEL AND CSV EXPORTS
+
+Allow users to:
+
+- Export PDF.
+- Export Excel XLSX.
+- Export CSV.
+- Print reports.
+
+Provide export options for:
+
+- Individual attendance.
+- Company attendance.
+- Worker salary statement.
+- All-worker payroll.
+- Expenses.
+- Advances.
+- Salary payments.
+- Monthly financial summaries.
+
+PDF reports must contain:
+
+- Company Name or Individual Profile.
+- Logo, if configured.
+- Report Title.
+- Date Range.
+- Generation Date.
+- Currency.
+- Clear table headings.
+- Totals.
+- Page Numbers.
+- Signature fields where appropriate.
+
+Exported figures must match the application.
+
+Protect spreadsheet exports against formula injection from untrusted text fields.
+
+---
+
+19. PROJECT MANAGEMENT
+
+In Company Mode, allow multiple projects.
+
+Project fields:
+
+- Project ID.
+- Project Name.
+- Client, optional.
+- Location.
+- Start Date.
+- End Date.
+- Project Manager.
+- Status.
+- Budget, optional.
+- Notes.
+
+Assign workers to projects.
+
+Track:
+
+- Attendance.
+- Working Hours.
+- Overtime.
+- Gross Wages.
+- Deductible Expenses.
+- Project Expenses.
+- Total Labor Cost.
+
+Provide project-wise reports and preserve historical project assignments.
+
+---
+
+20. SETTINGS
+
+Create a comprehensive Settings page.
+
+General Settings
+
+- Application Name.
+- Company Name.
+- Logo.
+- Language.
+- Date Format.
+- Time Format.
+- Timezone.
+- Currency.
+- Decimal Precision.
+
+Salary Settings
+
+- Hourly Wage.
+- Daily Wage.
+- Monthly Salary.
+- Standard Working Hours.
+- Half-Day Rules.
+- Unpaid Absence Rules.
+- Overtime Multipliers.
+- Salary Period.
+- Payroll Approval.
+- Deduction Rules.
+- Advance Recovery Rules.
+- Payroll Lock and Reopening.
+
+Attendance Settings
+
+- Work Schedule.
+- Weekly Off.
+- Break Rules.
+- Holiday Calendar.
+- Attendance Policies.
+- Overtime Thresholds.
+
+Company Settings
+
+- Profession Categories.
+- Projects.
+- Work Locations.
+- Supervisors.
+
+Security Settings
+
+- User Accounts.
+- Roles.
+- Permissions.
+- Password Change.
+- Session Management.
+- Audit Log.
+- Backup and Restore.
+
+Do not hardcode currency values. Allow SAR and other supported currencies.
+
+---
+
+21. USER ROLES AND PERMISSIONS
+
+Support these Company Mode roles:
+
+Administrator
+
+Full access to company settings, workers, attendance, payroll and reports.
+
+Attendance Manager
+
+Manage worker attendance and assigned workforce records.
+
+Accountant
+
+Manage expenses, payroll, deductions, advances, payments and financial reports.
+
+Supervisor
+
+Manage attendance for authorized workers and assigned projects.
+
+Read-only User
+
+View authorized information without editing.
+
+Enforce permissions on the backend.
+
+Prevent users from accessing other companies' information.
+
+Log important changes, including:
+
+- Attendance corrections.
+- Salary rate changes.
+- Expense approvals.
+- Deduction changes.
+- Advance recovery.
+- Salary payments.
+- Payroll finalization.
+- Payroll reopening.
+- User permission changes.
+
+---
+
+22. DATABASE AND BACKEND
+
+Use a reliable relational database.
+
+Suggested tables:
+
+- Users
+- Organizations
+- OrganizationMembers
+- IndividualProfiles
+- WorkerProfiles
+- ProfessionCategories
+- Projects
+- ProjectAssignments
+- SalaryRateHistory
+- AttendanceRecords
+- ShiftSettings
+- OvertimeRules
+- OvertimeApprovals
+- LeaveRecords
+- HolidayCalendar
+- ExpenseCategories
+- ExpenseRecords
+- ExpenseApprovals
+- WorkerAdvances
+- PayrollPeriods
+- PayrollRecords
+- PayrollLineItems
+- SalaryPayments
+- PaymentAllocations
+- Attachments
+- AuditLogs
+- ApplicationSettings
+
+Use:
+
+- Unique identifiers.
+- Foreign key constraints.
+- Appropriate indexes.
+- Database transactions.
+- Server-side validation.
+- Organization-level data isolation.
+- Accurate decimal storage for monetary amounts.
+- Created-at and updated-at timestamps.
+- Archival for historical records.
+
+Enforce uniqueness for worker attendance records according to the configured work-date and shift rules.
+
+Individual Mode must work without an organization or profession category.
+
+Never store passwords in plain text.
+
+Calculate authoritative payroll totals on the server, not only in the browser.
+
+---
+
+23. TECHNICAL REQUIREMENTS
+
+Use a maintainable full-stack architecture.
+
+Preferred technology:
+
+- React.
+- TypeScript.
+- Responsive UI components.
+- Secure backend API.
+- PostgreSQL or a suitable relational database.
+- Secure attachment storage.
+- Server-side payroll calculation.
+- Automated tests.
+- Database migrations.
+
+If the selected AI builder provides a different supported stack, use its native architecture while preserving all required functionality.
+
+Separate:
+
+- UI components.
+- Business logic.
+- Database operations.
+- Authentication.
+- Payroll calculations.
+- Report generation.
+- Export services.
+
+Include setup instructions and deployment guidance.
+
+Do not claim an external integration, backup process or feature works unless it has actually been implemented and tested.
+
+---
+
+24. SECURITY AND DATA PROTECTION
+
+Implement:
+
+- Secure authentication.
+- Server-side authorization.
+- Company data isolation.
+- Secure attachment access.
+- Input validation.
+- Audit logs.
+- Backup and restore procedures.
+- Protection against unauthorized payroll changes.
+- Safe session management.
+
+Archived workers must retain their historical finalized payroll records.
+
+Only authorized users may view or modify sensitive salary information.
+
+---
+
+25. TESTING REQUIREMENTS
+
+Create automated tests for:
+
+1. Hourly salary.
+2. Daily salary.
+3. Monthly salary.
+4. Overtime at 1×.
+5. Overtime at 1.5×.
+6. Overtime at 2×.
+7. Custom overtime rates.
+8. Half-day salary.
+9. Unpaid absence.
+10. Paid leave.
+11. Break deductions.
+12. Overnight shifts.
+13. Manual overtime.
+14. Salary rate changes.
+15. Expense deductions.
+16. Advance recovery.
+17. Partial salary payments.
+18. Final payable salary.
+19. Remaining salary balance.
+20. Duplicate expense prevention.
+21. Duplicate attendance prevention.
+22. Payroll finalization.
+23. Payroll reopening.
+24. Historical payroll preservation.
+25. Individual reports.
+26. All-worker reports.
+27. Date and weekday accuracy.
+28. PDF export.
+29. Excel export.
+30. CSV export.
+31. Company data isolation.
+32. Role-based permissions.
+
+Mandatory calculation test
+
+Worker details:
+
+- Hourly rate: 10 SAR.
+- Regular hours: 8.
+- Overtime hours: 3.
+- Overtime multiplier: 1.5×.
+
+Expected:
+
+- Regular wages: 80 SAR.
+- Overtime wages: 45 SAR.
+- Gross wages: 125 SAR before other adjustments.
+
+Mandatory final salary test
+
+Basic Salary = 2,400 SAR.
+
+Overtime Salary = 450 SAR.
+
+Allowances = 100 SAR.
+
+Gross Salary = 2,950 SAR.
+
+Approved deductions:
+
+- Food = 150 SAR.
+- Transport = 100 SAR.
+- Other expenses = 50 SAR.
+- Advance recovery = 200 SAR.
+
+Total Deductions = 500 SAR.
+
+Final Payable Salary = 2,450 SAR.
+
+Previously allocated salary payment = 500 SAR.
+
+Remaining Salary Balance = 1,950 SAR.
+
+The calculation must pass exactly, subject to the currency's configured precision.
+
+---
+
+26. DEVELOPMENT PLAN
+
+Implement the application in stages.
+
+Phase 1
+
+Create the application structure, responsive design, database and authentication.
+
+Phase 2
+
+Implement Individual Mode and Company Mode.
+
+Phase 3
+
+Implement worker management, profession categories and projects.
+
+Phase 4
+
+Implement attendance, bulk entry and the calendar.
+
+Phase 5
+
+Implement hourly, daily and monthly salary calculations.
+
+Phase 6
+
+Implement overtime settings and automatic overtime calculation.
+
+Phase 7
+
+Implement expenses, salary deductions, advances and payments.
+
+Phase 8
+
+Implement final salary calculations and remaining salary balances.
+
+Phase 9
+
+Implement individual reports, company reports and exports.
+
+Phase 10
+
+Implement permissions, audit logs, backup procedures and automated tests.
+
+Phase 11
+
+Test the complete application and fix identified issues.
+
+Do not stop after generating the initial dashboard.
+
+Continue implementing and testing the actual features.
+
+If a feature cannot be implemented because of platform limitations, state the limitation clearly.
+
+---
+
+27. FINAL ACCEPTANCE CRITERIA
+
+The application is complete only when:
+
+- Individual Mode has no profession categories.
+- Company Mode supports profession-wise worker categories.
+- Multiple workers can be managed.
+- Attendance can be marked from the calendar.
+- Present is green and Absent is red.
+- Not Marked is separate from Absent.
+- Working hours calculate automatically.
+- Hourly, daily and monthly salary settings work.
+- Overtime multipliers support 1×, 1.5×, 2× and custom values.
+- Overtime wages calculate correctly.
+- Expenses can be entered and categorized.
+- Only approved salary-deductible expenses affect worker payroll.
+- Total gross salary calculates automatically.
+- Total deductions calculate automatically.
+- Final payable salary calculates automatically.
+- Previous payments are allocated correctly.
+- Remaining salary balance calculates automatically.
+- Advances are tracked without double deductions.
+- Individual reports work.
+- All-worker reports work.
+- Reports display dates and weekdays.
+- PDF, Excel and CSV exports work.
+- Historical finalized payroll remains preserved.
+- Company data is securely isolated.
+- Role-based permissions work.
+- Data persists after signing out and signing in again.
+- The app works on supported mobile and desktop devices.
+- Critical automated tests pass.
+
+FINAL INSTRUCTION
+
+Build WorkLedger Pro as a complete, functional workforce management and payroll application.
+
+Prioritize:
+
+1. Accurate salary calculations.
+2. Automatic expense deduction and final salary calculation.
+3. Reliable attendance records.
+4. Clear overtime calculations.
+5. Secure and persistent data storage.
+6. Professional calendar and dashboard.
+7. Correct individual and company reports.
+8. Mobile-friendly usability.
+9. Historical payroll accuracy.
+10. Maintainable, tested software architecture.
+
+Deliver the working application, database setup, configuration instructions and deployment guidance. Clearly identify any incomplete features.
